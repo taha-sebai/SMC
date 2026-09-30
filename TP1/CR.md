@@ -1,6 +1,6 @@
 # TP1: "Prototypage Virtuel avec SoCLib"
-Taha Sebai 21103800
-Dylan Morais Ramos 21112920
+* Taha Sebai 21103800
+* Dylan Morais Ramos 21112920
 
 ## 2.3 Composant fifo_gcd_master
 
@@ -179,6 +179,25 @@ On relit les ports aux signaux correspondants. C'est pareil que pour master à l
   opb   = 1336760686
   pgcd  = 2
 ```
+**Quelle est la duréee moyenne d'une itération?**
+Nombre de cycles total : `9919`
+
+Nombre d'itération : `24`
+
+Moyenne : $9919\div24 = 413$
+
+
+**temps d'exécution du programme**
+Pour calculer le temps d'exécution, on utilise la commande `time` :
+```
+time ./simulator.x 10000
+```
+Résultat :
+```
+real    0m0,013s
+user    0m0,008s
+sys     0m0,000s
+```
 
 **CASS**
 ```
@@ -202,7 +221,7 @@ On relit les ports aux signaux correspondants. C'est pareil que pour master à l
   opa   = 1038816544
   opb   = 940714160
   pgcd  = 16
-************************ iteration 5
+************************ iteration 59919
   cycle = 829
   opa   = 789063065
   opb   = 464968134
@@ -303,4 +322,13 @@ On relit les ports aux signaux correspondants. C'est pareil que pour master à l
   opb   = 1336760686
   pgcd  = 2
 
+```
+
+*Remarque : le nombre de cycles moyen d'une itération est le même.*
+
+Temps d'exécution pour fast_simulator :
+```
+real    0m0,010s
+user    0m0,004s
+sys     0m0,005s
 ```
